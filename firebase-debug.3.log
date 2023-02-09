@@ -1,0 +1,220 @@
+[debug] [2023-01-21T03:02:24.938Z] ----------------------------------------------------------------------
+[debug] [2023-01-21T03:02:24.941Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only hosting
+[debug] [2023-01-21T03:02:24.942Z] CLI Version:   11.21.0
+[debug] [2023-01-21T03:02:24.942Z] Platform:      win32
+[debug] [2023-01-21T03:02:24.942Z] Node Version:  v18.8.0
+[debug] [2023-01-21T03:02:24.944Z] Time:          Sat Jan 21 2023 04:02:24 GMT+0100 (Central European Standard Time)
+[debug] [2023-01-21T03:02:24.945Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-21T03:02:25.186Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-21T03:02:25.187Z] > authorizing via signed-in user (helmar81@gmail.com)
+[debug] [2023-01-21T03:02:25.188Z] [iam] checking project myresume-5a38b for permissions ["firebase.projects.get"]
+[debug] [2023-01-21T03:02:25.192Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/myresume-5a38b:testIamPermissions [none]
+[debug] [2023-01-21T03:02:25.193Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/myresume-5a38b:testIamPermissions x-goog-quota-user=projects/myresume-5a38b
+[debug] [2023-01-21T03:02:25.193Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/myresume-5a38b:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-21T03:02:27.366Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/myresume-5a38b:testIamPermissions 200
+[debug] [2023-01-21T03:02:27.367Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/myresume-5a38b:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-21T03:02:27.370Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/myresume-5a38b [none]
+[debug] [2023-01-21T03:02:27.909Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/myresume-5a38b 200
+[debug] [2023-01-21T03:02:27.909Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/myresume-5a38b {"projectId":"myresume-5a38b","projectNumber":"317997874891","displayName":"MyResume","name":"projects/myresume-5a38b","resources":{"hostingSite":"myresume-5a38b","realtimeDatabaseInstance":"myresume-5a38b","storageBucket":"myresume-5a38b.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_64d755b1-2947-4306-a3a2-c180f8be6cec"}
+[debug] [2023-01-21T03:02:27.917Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/myresume-5a38b/sites 
+[debug] [2023-01-21T03:02:29.325Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/myresume-5a38b/sites 200
+[debug] [2023-01-21T03:02:29.325Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/myresume-5a38b/sites {"sites":[{"name":"projects/myresume-5a38b/sites/myresume-5a38b","defaultUrl":"https://myresume-5a38b.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-01-21T03:02:29.326Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/myresume-5a38b/webApps/-/config [none]
+[debug] [2023-01-21T03:02:30.227Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/myresume-5a38b/webApps/-/config 200
+[debug] [2023-01-21T03:02:30.227Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/myresume-5a38b/webApps/-/config {"projectId":"myresume-5a38b","databaseURL":"https://myresume-5a38b.firebaseio.com","storageBucket":"myresume-5a38b.appspot.com","locationId":"us-central","apiKey":"AIzaSyCTgqJYzScWJdXV4ORQSMh2AEflnQYJmAQ","authDomain":"myresume-5a38b.firebaseapp.com","messagingSenderId":"317997874891"}
+[debug] [2023-01-21T03:02:30.234Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/myresume-5a38b [none]
+[debug] [2023-01-21T03:02:30.894Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/myresume-5a38b 200
+[debug] [2023-01-21T03:02:30.894Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/myresume-5a38b {"projectId":"myresume-5a38b","projectNumber":"317997874891","displayName":"MyResume","name":"projects/myresume-5a38b","resources":{"hostingSite":"myresume-5a38b","realtimeDatabaseInstance":"myresume-5a38b","storageBucket":"myresume-5a38b.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_64d755b1-2947-4306-a3a2-c180f8be6cec"}
+[info] i  hosting[myresume-5a38b]: Serving hosting files from: dist {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mdist\u001b[22m"}}
+[info] +  hosting[myresume-5a38b]: Local server: http://localhost:5004 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5004\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [21/Jan/2023:03:02:37 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.55" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [21/Jan/2023:03:02:37 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.55\""}}
+[info] i  hosting: ::1 - - [21/Jan/2023:03:02:37 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:5004/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.55" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [21/Jan/2023:03:02:37 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:5004/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.55\""}}
+[info] i  hosting: ::1 - - [21/Jan/2023:03:02:37 +0000] "GET /favicon.ico HTTP/1.1" 304 - "http://localhost:5004/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.55" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [21/Jan/2023:03:02:37 +0000] \"GET /favicon.ico HTTP/1.1\" 304 - \"http://localhost:5004/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.55\""}}
+[debug] [2023-01-21T03:05:27.217Z] ----------------------------------------------------------------------
+[debug] [2023-01-21T03:05:27.221Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js use --add
+[debug] [2023-01-21T03:05:27.222Z] CLI Version:   11.21.0
+[debug] [2023-01-21T03:05:27.223Z] Platform:      win32
+[debug] [2023-01-21T03:05:27.223Z] Node Version:  v18.8.0
+[debug] [2023-01-21T03:05:27.226Z] Time:          Sat Jan 21 2023 04:05:27 GMT+0100 (Central European Standard Time)
+[debug] [2023-01-21T03:05:27.227Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-21T03:05:27.389Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-21T03:05:27.390Z] > authorizing via signed-in user (helmar81@gmail.com)
+[debug] [2023-01-21T03:05:27.397Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2023-01-21T03:05:30.210Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-01-21T03:05:30.211Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] 
+[info] Created alias staging for myresume-5a38b.
+[info] Now using alias staging (myresume-5a38b)
+[debug] [2023-01-21T03:06:14.746Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:253:49)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-01-21T03:06:44.978Z] ----------------------------------------------------------------------
+[debug] [2023-01-21T03:06:44.982Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2023-01-21T03:06:44.983Z] CLI Version:   11.21.0
+[debug] [2023-01-21T03:06:44.983Z] Platform:      win32
+[debug] [2023-01-21T03:06:44.983Z] Node Version:  v18.8.0
+[debug] [2023-01-21T03:06:44.985Z] Time:          Sat Jan 21 2023 04:06:44 GMT+0100 (Central European Standard Time)
+[debug] [2023-01-21T03:06:44.986Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-21T03:06:45.120Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-21T03:06:45.121Z] > authorizing via signed-in user (helmar81@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\User\my-CV
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-01-21T03:06:47.354Z] Using project from CLI flag: myresume-5a38b
+[debug] [2023-01-21T03:06:47.360Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/myresume-5a38b [none]
+[debug] [2023-01-21T03:06:50.741Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/myresume-5a38b 200
+[debug] [2023-01-21T03:06:50.741Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/myresume-5a38b {"projectId":"myresume-5a38b","projectNumber":"317997874891","displayName":"MyResume","name":"projects/myresume-5a38b","resources":{"hostingSite":"myresume-5a38b","realtimeDatabaseInstance":"myresume-5a38b","storageBucket":"myresume-5a38b.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_64d755b1-2947-4306-a3a2-c180f8be6cec"}
+[info] i  Using project myresume-5a38b (MyResume) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote dist/404.html 
+[debug] [2023-01-21T03:07:02.651Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-01-21T03:07:12.344Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-01-21T03:07:12.345Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.16.0","browserURL":"https://www.gstatic.com/firebasejs/9.16.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.16.0/firebase.tgz"},"live":{"version":"9.16","browserURL":"https://www.gstatic.com/firebasejs/live/9.16/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.16/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.16.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.16.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.16.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.16.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.16.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.16.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.16.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.16.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.16.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.16.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.16.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.16.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.16.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.16.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.16.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.16.0/firebase-firestore.memory.js"}}
+[info] +  Wrote dist/index.html 
+[info] 
+[info] i  Writing configuration info to firebase.json... 
+[info] i  Writing project information to .firebaserc... 
+[info] 
+[info] +  Firebase initialization complete! 
+[debug] [2023-01-21T03:07:28.277Z] Error: Timed out.
+    at Timeout.<anonymous> (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:253:49)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-01-21T03:07:43.717Z] ----------------------------------------------------------------------
+[debug] [2023-01-21T03:07:43.720Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only hosting
+[debug] [2023-01-21T03:07:43.721Z] CLI Version:   11.21.0
+[debug] [2023-01-21T03:07:43.721Z] Platform:      win32
+[debug] [2023-01-21T03:07:43.721Z] Node Version:  v18.8.0
+[debug] [2023-01-21T03:07:43.723Z] Time:          Sat Jan 21 2023 04:07:43 GMT+0100 (Central European Standard Time)
+[debug] [2023-01-21T03:07:43.723Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-21T03:07:43.950Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-21T03:07:43.951Z] > authorizing via signed-in user (helmar81@gmail.com)
+[debug] [2023-01-21T03:07:43.951Z] [iam] checking project myresume-5a38b for permissions ["firebase.projects.get"]
+[debug] [2023-01-21T03:07:43.955Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/myresume-5a38b:testIamPermissions [none]
+[debug] [2023-01-21T03:07:43.955Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/myresume-5a38b:testIamPermissions x-goog-quota-user=projects/myresume-5a38b
+[debug] [2023-01-21T03:07:43.956Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/myresume-5a38b:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-21T03:07:53.207Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/myresume-5a38b:testIamPermissions 200
+[debug] [2023-01-21T03:07:53.207Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/myresume-5a38b:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-21T03:07:53.210Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/myresume-5a38b [none]
+[debug] [2023-01-21T03:07:53.726Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/myresume-5a38b 200
+[debug] [2023-01-21T03:07:53.727Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/myresume-5a38b {"projectId":"myresume-5a38b","projectNumber":"317997874891","displayName":"MyResume","name":"projects/myresume-5a38b","resources":{"hostingSite":"myresume-5a38b","realtimeDatabaseInstance":"myresume-5a38b","storageBucket":"myresume-5a38b.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_64d755b1-2947-4306-a3a2-c180f8be6cec"}
+[debug] [2023-01-21T03:07:53.733Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/myresume-5a38b/sites 
+[debug] [2023-01-21T03:07:55.347Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/myresume-5a38b/sites 200
+[debug] [2023-01-21T03:07:55.347Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/myresume-5a38b/sites {"sites":[{"name":"projects/myresume-5a38b/sites/myresume-5a38b","defaultUrl":"https://myresume-5a38b.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-01-21T03:07:55.348Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/myresume-5a38b/webApps/-/config [none]
+[debug] [2023-01-21T03:09:00.736Z] ----------------------------------------------------------------------
+[debug] [2023-01-21T03:09:00.739Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2023-01-21T03:09:00.740Z] CLI Version:   11.21.0
+[debug] [2023-01-21T03:09:00.741Z] Platform:      win32
+[debug] [2023-01-21T03:09:00.741Z] Node Version:  v18.8.0
+[debug] [2023-01-21T03:09:00.743Z] Time:          Sat Jan 21 2023 04:09:00 GMT+0100 (Central European Standard Time)
+[debug] [2023-01-21T03:09:00.743Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-21T03:09:00.902Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-21T03:09:00.903Z] > authorizing via signed-in user (helmar81@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\User\my-CV
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-01-21T03:09:02.911Z] Using project from CLI flag: myresume-5a38b
+[debug] [2023-01-21T03:09:02.917Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/myresume-5a38b [none]
+[debug] [2023-01-21T03:09:04.905Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/myresume-5a38b 200
+[debug] [2023-01-21T03:09:04.906Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/myresume-5a38b {"projectId":"myresume-5a38b","projectNumber":"317997874891","displayName":"MyResume","name":"projects/myresume-5a38b","resources":{"hostingSite":"myresume-5a38b","realtimeDatabaseInstance":"myresume-5a38b","storageBucket":"myresume-5a38b.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_64d755b1-2947-4306-a3a2-c180f8be6cec"}
+[info] i  Using project myresume-5a38b (MyResume) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-01-21T03:09:12.177Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-01-21T03:09:12.376Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-01-21T03:09:12.376Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.16.0","browserURL":"https://www.gstatic.com/firebasejs/9.16.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.16.0/firebase.tgz"},"live":{"version":"9.16","browserURL":"https://www.gstatic.com/firebasejs/live/9.16/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.16/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.16.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.16.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.16.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.16.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.16.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.16.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.16.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.16.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.16.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.16.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.16.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.16.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.16.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.16.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.16.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.16.0/firebase-firestore.memory.js"}}
+[info] i  Skipping write of dist/index.html 
+[info] 
+[info] i  Writing configuration info to firebase.json... 
+[info] i  Writing project information to .firebaserc... 
+[info] 
+[info] +  Firebase initialization complete! 
+[debug] [2023-01-21T03:09:23.961Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:253:49)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-01-21T03:09:37.766Z] ----------------------------------------------------------------------
+[debug] [2023-01-21T03:09:37.770Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only hosting
+[debug] [2023-01-21T03:09:37.771Z] CLI Version:   11.21.0
+[debug] [2023-01-21T03:09:37.771Z] Platform:      win32
+[debug] [2023-01-21T03:09:37.772Z] Node Version:  v18.8.0
+[debug] [2023-01-21T03:09:37.773Z] Time:          Sat Jan 21 2023 04:09:37 GMT+0100 (Central European Standard Time)
+[debug] [2023-01-21T03:09:37.774Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-21T03:09:37.964Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-21T03:09:37.965Z] > authorizing via signed-in user (helmar81@gmail.com)
+[debug] [2023-01-21T03:09:37.966Z] [iam] checking project myresume-5a38b for permissions ["firebase.projects.get"]
+[debug] [2023-01-21T03:09:37.971Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/myresume-5a38b:testIamPermissions [none]
+[debug] [2023-01-21T03:09:37.971Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/myresume-5a38b:testIamPermissions x-goog-quota-user=projects/myresume-5a38b
+[debug] [2023-01-21T03:09:37.972Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/myresume-5a38b:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-21T03:09:41.745Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/myresume-5a38b:testIamPermissions 200
+[debug] [2023-01-21T03:09:41.745Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/myresume-5a38b:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-21T03:09:41.747Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/myresume-5a38b [none]
+[debug] [2023-01-21T03:10:02.784Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/myresume-5a38b
+[debug] [2023-01-21T03:10:03.372Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/myresume-5a38b
+    at RetryOperation._fn (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:242:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project myresume-5a38b. Please make sure the project exists and your account has permission to access it.

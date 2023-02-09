@@ -1,0 +1,17 @@
+{
+    "name": "Webdesign",
+    "short_name": "resume",
+    "theme_color": "#1976d2",
+    "background_color": "#633ce0",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+      {
+        "src": "assets/Helmar.jpg",
+     
+        "type": "image/jpg"
+      }
+     
+    ]
+  }
